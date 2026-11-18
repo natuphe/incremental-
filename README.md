@@ -23,6 +23,20 @@ npm run dev
 
 デフォルトのローカル URL: `http://localhost:5173/`
 
+## 公開 URL（GitHub Pages）
+
+公開サイトの想定 URL:
+
+**https://natuphe.github.io/incremental-/**
+
+初回だけリポジトリ設定が必要:
+
+1. https://github.com/natuphe/incremental-/settings/pages を開く
+2. Build and deployment → Source を **Deploy from a branch** にする
+3. Branch を **gh-pages** / **/ (root)** にして Save
+
+`gh-pages` ブランチにはビルド済みの静的ファイルを置いてある。Source を **GitHub Actions** にしてもよい（`.github/workflows/deploy-pages.yml`）。
+
 ## その他コマンド
 
 ```bash
